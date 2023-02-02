@@ -5,3 +5,12 @@
     padding: 30px;
     border-radius: 10px;
 }
+
+p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.MainInput {
+    width: 350px;
+}

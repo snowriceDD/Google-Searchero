@@ -10,11 +10,26 @@
 <body>
     <div id="Container">
         <form id="MainForm">
+            <p>기본 검색어</p>
             <input type="text" class="BasicWord" id="InputForm" placeholder="기본 검색어" >
+            <P>필수 포함 검색어</P>
             <input type="text" class="CompulsoryWord" id="InputForm" placeholder="필수 검색어" >
-            <input type="text" class="OrWord01" id="InputForm" placeholder="검색어, 검색어" >
-            <input type="text" class="OrWord02" id="InputForm" placeholder="검색어, 검색어" >
+            <p>둘 중 하나라도 포함되어야 하는 검색어</p>
+            <input type="text" class="OrWord01" id="InputForm" placeholder="검색어" >
+            <input type="text" class="OrWord02" id="InputForm" placeholder="검색어" >
+            <p>둘 다 포함되어야 하는 검색어</p>
+            <input type="text" class="AndWord01" id="InputForm" placeholder="검색어" >
+            <input type="text" class="AndWord02" id="InputForm" placeholder="검색어" >
+            <p>제외 검색어</p>
+            <input type="text" class="RemoveWord" id="InputForm" placeholder="제외 검색어" >
+            <p>대체 검색어</p>
+            <input type="text" class="SubWord" id="InputForm" placeholder="대체 검색어" >
+            <p>범위 검색어</p>
+            <input type="text" class="RangeWord" id="InputForm" placeholder="범위 검색어" >
+            <p>가격 검색어</p>
+            <input type="text" class="PriceWord" id="InputForm" placeholder="가격 검색어" >
 
+            <p>최종 검색어</p>
             <input type="text" class="MainInput" id="InputForm" >
             <input type="button" value="search" class="SearchSubmit">
             <input type="reset" value="reset">
