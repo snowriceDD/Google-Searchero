@@ -8,18 +8,32 @@ document.getElementById("MainForm").onkeyup = function changer() {
     const compulsoryWord = document.querySelector(".CompulsoryWord").value;
     const orWord01 = document.querySelector(".OrWord01").value;
     const orWord02 = document.querySelector(".OrWord02").value;
+    const andWord01 = document.querySelector(".AndWord01").value;
+    const andWord02 = document.querySelector(".AndWord02").value;
+    const removeWord = document.querySelector(".RemoveWord").value;
+    const subWord = document.querySelector(".SubWord").value;
+    const rangeWord = document.querySelector(".RangeWord").value;
+    const priceWord = document.querySelector(".PriceWord").value;
+    const siteWord = document.querySelector(".SiteWord").value;
+    const urlWord = document.querySelector(".UrlWord").value;
+
     const searchOuput = document.querySelector(".MainInput");
     
+
+
     let compulsoryWordConverter = 
     (compulsoryWord.length === 0) ? compulsoryWord : `"${compulsoryWord}"`
     ;
     
     let orWordConverter = 
-    (orWord01.length === 0 || orWord02.length === 0) ? orWord01 : `(${orWord01} | ${orWord02})`
+    (orWord01.length === 0 || orWord02.length === 0) ? orWord01 : `(${orWord01} OR ${orWord02})`
     ;
     
+    let andWordConverter = 
+    (andWord01.length === 0 || andWord02.length === 0) ? andWord01 : `(${andWord01} AND ${andWord02})`
+    ;
     
-    searchOuput.value = `${basicWord} ${compulsoryWordConverter} ${orWordConverter}`;
+    searchOuput.value = `${basicWord} ${compulsoryWordConverter} ${orWordConverter} ${andWordConverter}`;
     searchVelue = searchOuput.value;
 }
 
